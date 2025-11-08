@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .calendar-cell {
+    @apply min-h-[100px] p-2 border border-gray-200 transition-all hover:bg-blue-50;
+  }
+
+  .event-badge {
+    @apply inline-flex items-center px-2 py-1 rounded text-xs font-medium;
+  }
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
